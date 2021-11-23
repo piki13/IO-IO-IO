@@ -10,4 +10,4 @@ jobs:
           # Name of the Azure SQL Server name, like Fabrikam.database.windows.net.
           server-name: sqldiary.database.windows.net
           # The connection string, including authentication information, for the Azure SQL Server database.
-          connection-string:  port = 1433, user = "Pau057178", password = "lala", database = "dziennik"
+          connection-string:   User ID=Pau057178;Password=${{ secrets.AZURE_SQL_CONNECTION_STRING }};Catalog=dziennik;
